@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@300&display=swap');
 
-* _{
+* _ {
     margin: 0;
     padding: 0;
     border: none;
@@ -20,15 +20,16 @@ body {
     max-height: 96px;
 }
 
-header, footer {
-    background: linear-gradient(70deg, #5b3b71 20%, rgba(60,60,60,0.9) 50%, #5b3b71 80%);
+header,
+footer {
+    background: linear-gradient(70deg, #5b3b71 20%, rgba(60, 60, 60, 0.9) 50%, #5b3b71 80%);
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-} 
+}
 
 header h1 {
     font-size: xxx-large;
@@ -41,7 +42,8 @@ header h1 {
 #navbar {
     padding-left: 20px;
 }
-#navbar > li {
+
+#navbar>li {
     list-style-type: none;
     display: inline;
     margin-right: 24px;
@@ -65,13 +67,14 @@ footer {
     flex-direction: column;
 }
 
-footer > div {
+footer>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     text-align: center;
+    padding-top: 1em;
 }
 
 footer a {
@@ -79,8 +82,8 @@ footer a {
     color: whitesmoke;
 }
 
-footer > div > div {
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(34,34,48,1) 35%, rgba(17,2,25,0.7987570028011204) 100%);
+footer>div>div {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(34, 34, 48, 1) 35%, rgba(17, 2, 25, 0.7987570028011204) 100%);
     border-radius: 4px;
     text-align: center;
     padding: 1em;
@@ -89,68 +92,133 @@ footer > div > div {
 }
 
 @media (max-width: 600px) {
-    #navbar  li {
+    #navbar li {
         margin-right: 8px;
     }
 }
+
 /* Hero Image */
 
 #hero-image {
     background: url('../images/backbar.jpg') repeat center center;
     background-size: cover;
     height: 300px;
-    width: 150%;    
+    width: 150%;
     animation: animate 30s linear infinite;
 }
+
 @keyframes animate {
     0% {
-      transform: translateX(0%);
+        transform: translateX(0%);
     }
+
     100% {
-      transform: translateX(-25%);
+        transform: translateX(-25%);
     }
-  }
+}
 
-  /* Panel 1 */
+/* Panel 1 */
 
-  .index-panel {
+.index-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 1em;
-  }
+}
 
-  .index-panel > div {
+.index-panel>div {
     text-align: center;
-  }
+}
 
-  .index-panel img {
+.index-panel img {
     max-height: 256px;
     max-width: 256px;
     margin: 0 auto;
-  }
+}
 
-  .black-background {
+.black-background {
     background-color: black;
-  }
+}
 
-  .grey-background {
+.grey-background {
     background-color: rgb(114, 114, 114);
     color: black;
-  }
+}
 
-  @media (min-width: 600px) {
-    .index-panel{
+@media (min-width: 600px) {
+    .index-panel {
         flex-direction: row;
     }
-    .index-panel > div {
+
+    .index-panel>div {
         width: 50%;
     }
-  }
+}
 
-  @media (min-width: 1050px) {
-    .index-panel > div {
+@media (min-width: 1050px) {
+    .index-panel>div {
         width: 33%;
     }
-  }
+}
+
+/* Index panel 3 */
+
+.index-panel3-background {
+    background: url('../images/barbackground.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.index-panel3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(150px, auto);
+    align-items: flex-start;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5em;
+    padding: 2em 0;
+}
+
+.index-panel3 i {
+    font-size: xx-large;
+}
+
+.index-panel3 h3 {
+    font-size: 140%;
+}
+.index-panel3 p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.index-panel3 > div {
+    background: linear-gradient(77deg, rgba(17,0,36,0.6951155462184874) 0%, rgba(109,4,237,0.700717787114846) 50%, rgba(37,11,97,0.7035189075630253) 100%);
+    padding: 1.5em;
+    border-radius: 12px;
+}
+
+.index-panel3 a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+    font-size: 120%;
+    font-style: italic;
+    padding: 2px;
+}
+
+.index-panel3 a:hover {
+    color: cyan;
+}
+
+@media (max-width:600px) {
+    .index-panel3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+}
