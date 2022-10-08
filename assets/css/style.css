@@ -10,7 +10,11 @@ body {
     font-family: 'Courgette', sans-serif;
     color: whitesmoke;
     background-color: slategray;
+    margin: 0;
+    padding: 0;
 }
+
+/* Header and Footer */
 
 #logo {
     max-height: 96px;
@@ -23,6 +27,7 @@ header, footer {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
 } 
 
 header h1 {
@@ -33,6 +38,9 @@ header h1 {
     padding-right: 1em;
 }
 
+#navbar {
+    padding-left: 20px;
+}
 #navbar > li {
     list-style-type: none;
     display: inline;
@@ -79,3 +87,26 @@ footer > div > div {
     width: 150px;
     height: 80px;
 }
+
+@media (max-width: 600px) {
+    #navbar  li {
+        margin-right: 8px;
+    }
+}
+/* Hero Image */
+
+#hero-image {
+    background: url('../images/backbar.jpg') repeat center center;
+    background-size: cover;
+    height: 300px;
+    width: 150%;    
+    animation: animate 30s linear infinite;
+}
+@keyframes animate {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
