@@ -9,7 +9,7 @@
 body {
     font-family: 'Courgette', sans-serif;
     color: whitesmoke;
-    background-color: slategray;
+    background-color: rgb(114, 114, 114);
     margin: 0;
     padding: 0;
 }
@@ -170,6 +170,18 @@ footer>div>div {
     padding: 0;
     margin: 0;
     width: 100%;
+}
+#index-titlebox {
+    padding-top: 2em;
+}
+#index-titlebox h2 {
+    background: linear-gradient(77deg, rgba(17,0,36,0.6951155462184874) 0%, rgba(109,4,237,0.700717787114846) 50%, rgba(37,11,97,0.7035189075630253) 100%);
+    max-width: 33%;
+    margin: 0 auto;
+    padding: 1.5em;
+    border-radius: 12px;
+    font-size: 150%;
+    text-align: center;
 }
 .index-panel3 {
     display: grid;
