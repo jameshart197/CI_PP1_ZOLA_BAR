@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@300&display=swap');
+
+* _{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Courgette', sans-serif;
+    color: whitesmoke;
+    background-color: slategray;
+}
+
+#logo {
+    max-height: 96px;
+}
+
+header, footer {
+    background: linear-gradient(70deg, #5b3b71 20%, rgba(60,60,60,0.9) 50%, #5b3b71 80%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+} 
+
+header h1 {
+    font-size: xxx-large;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 0;
+    padding-right: 1em;
+}
+
+#navbar > li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 24px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navbar .current {
+    color: black;
+}
+
+#navbar a:hover {
+    border: 2px solid black;
+    padding: 4px;
+}
