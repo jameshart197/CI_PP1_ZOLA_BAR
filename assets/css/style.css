@@ -306,6 +306,7 @@ footer>div>div {
 }
 
 .whats-on-container > div {
+    display: flex;
     background: radial-gradient(circle, rgba(0,0,0,0.9023984593837535) 0%, rgba(42,42,42,0.896796218487395) 100%);
     padding: 25px;
     width: 70%;
@@ -313,4 +314,15 @@ footer>div>div {
 
 .whats-on-container img {
     max-height: 256px;
+}
+
+#newsletter-form-container {
+    background: url('../images/form-background-glass.jpg') no-repeat center;
+    background-size: contain;
+    max-height: 420px;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
 }
