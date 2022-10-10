@@ -135,22 +135,6 @@ footer>div>div {
     color: black;
 }
 
-@media (min-width: 600px) {
-    .index-panel {
-        flex-direction: row;
-    }
-
-    .index-panel>div {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1050px) {
-    .index-panel>div {
-        width: 33%;
-    }
-}
-
 /* Index panel 3 */
 
 .index-panel3-background {
@@ -241,7 +225,7 @@ footer>div>div {
     border: 2px solid black;
 }
 
-.menu-container > div {
+.menu-container>div {
     border-top: 2px solid black;
     border-block-start: 2px solid black;
 }
@@ -285,7 +269,7 @@ footer>div>div {
     text-align: center;
 }
 
-.whats-on-container > div {
+.whats-on-container>div {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -296,15 +280,15 @@ footer>div>div {
     box-sizing: border-box;
 }
 
-.whatson-leftside > div {
+.whatson-leftside>div {
     width: 100%;
-    background: radial-gradient(circle, rgba(0,0,0,0.9023984593837535) 0%, rgba(42,42,42,0.896796218487395) 100%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9023984593837535) 0%, rgba(42, 42, 42, 0.896796218487395) 100%);
     padding: 1em;
 }
 
-.whatson-rightside > div {
+.whatson-rightside>div {
     width: 100%;
-    background: radial-gradient(circle, rgba(0,0,0,0.9023984593837535) 0%, rgba(42,42,42,0.896796218487395) 100%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9023984593837535) 0%, rgba(42, 42, 42, 0.896796218487395) 100%);
     padding: 1em;
 }
 
@@ -397,6 +381,19 @@ footer>div>div {
 /*media queries */
 
 @media (min-width: 40rem) {
+
+    .index-panel {
+        flex-direction: row;
+    }
+
+    .index-panel img {
+        max-width: 400px;
+    }
+
+    .index-panel>div {
+        width: 50%;
+    }
+
     .index-panel3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: minmax(150px, auto);
@@ -407,12 +404,12 @@ footer>div>div {
         width: 150%;
         animation: animate 30s linear infinite;
     }
-    
+
     @keyframes animate {
         0% {
             transform: translateX(0%);
         }
-    
+
         100% {
             transform: translateX(-25%);
         }
@@ -432,12 +429,14 @@ footer>div>div {
         flex-direction: row;
     }
 
-    .whatson-leftside > div {
+    .whatson-leftside>div {
         width: 70%;
     }
-    .whatson-rightside > div {
+
+    .whatson-rightside>div {
         width: 90%;
     }
+
     .contact-us-container {
         flex-direction: row;
     }
@@ -452,12 +451,18 @@ footer>div>div {
 }
 
 @media (min-width: 60rem) {
+    .index-panel>div {
+        width: 33%;
+    }
+
     .contact-rightside {
         width: 30%;
     }
-    .whatson-rightside > div {
+
+    .whatson-rightside>div {
         width: 70%;
     }
+
     .menu-container {
         width: 80%;
     }
