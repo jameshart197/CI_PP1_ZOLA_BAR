@@ -298,6 +298,7 @@ footer>div>div {
     align-items: center;
     gap: 1em;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .whatson-leftside > div {
@@ -314,6 +315,7 @@ footer>div>div {
 
 .whats-on-container img {
     max-height: 256px;
+    max-width: 100%;
 }
 
 #newsletter-container {
